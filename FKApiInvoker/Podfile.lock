@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FKApiInvoker (1.0.0):
+    - JsonModelHttp
+  - JsonModelHttp (1.0.0):
+    - AFNetworking
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - FKApiInvoker (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - JsonModelHttp
+    - YYModel
+
+EXTERNAL SOURCES:
+  FKApiInvoker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FKApiInvoker: 0c0b7547592e6feba261140e6ecabba3663e93c9
+  JsonModelHttp: 6c604e2c835ff4d5a3a8eb183f82c5fc88e55cba
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 62e06510676a8d00eaba7ad071955cc516b457a9
+
+COCOAPODS: 1.7.2
