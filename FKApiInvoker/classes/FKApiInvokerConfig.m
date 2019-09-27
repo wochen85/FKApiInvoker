@@ -12,7 +12,9 @@
                    commonHeaders:(NSDictionary*)commonHeaders
                      respCodeKey:(NSString*)respCodeKey
                       respMsgKey:(NSString*)respMsgKey
-           tokenExpiredCodeValue:(NSString*)tokenExpiredCodeValue;
+                     respDataKey:(NSString*)respDataKey
+                     successCode:(NSInteger)successCode
+                    tokenExpiredCode:(NSInteger)tokenExpiredCode;
 {
     self = [super init];
     if (self) {
@@ -20,7 +22,9 @@
         _commonHeaders = commonHeaders;
         _respCodeKey = respCodeKey;
         _respMsgKey = respMsgKey;
-        _tokenExpiredCodeValue = tokenExpiredCodeValue;
+        _respDataKey = respDataKey;
+        _successCode = successCode;
+        _tokenExpiredCode = tokenExpiredCode;
     }
     return self;
 }

@@ -16,13 +16,15 @@ PODS:
     - AFNetworking/NSURLSession
   - FKApiInvoker (1.0.0):
     - JsonModelHttp
-  - JsonModelHttp (1.0.0):
+  - JsonModelHttp (1.0.2):
     - AFNetworking
     - YYModel
+  - SVProgressHUD (2.2.6)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FKApiInvoker (from `../`)
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -33,13 +35,21 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   FKApiInvoker:
     :path: "../"
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 4fdf3fdc8703fd9915dae33fc1363c604a06b24e
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FKApiInvoker: 0c0b7547592e6feba261140e6ecabba3663e93c9
-  JsonModelHttp: 6c604e2c835ff4d5a3a8eb183f82c5fc88e55cba
+  JsonModelHttp: 8040b3658f4ef921dcf94a63bfd73d2dc37ef5bb
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 62e06510676a8d00eaba7ad071955cc516b457a9
+PODFILE CHECKSUM: d25b37b7927de2d2622617c6a30c6571ac3086f1
 
 COCOAPODS: 1.7.2

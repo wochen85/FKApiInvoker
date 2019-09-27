@@ -16,11 +16,14 @@ typedef NS_ENUM(NSUInteger, FKApiLevel) {
     FKApiLevel_prd =3,     //生产
 };
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface FKApiInvoker : NSObject
 @property (nonatomic) FKApiLevel apiLevel;
--(void) configInvoker:(FKApiInvokerConfig*)config;
-@end
+@property (nonatomic, copy) void(^tokenExpiredBlk)(void);
 
-NS_ASSUME_NONNULL_END
++(instancetype) sharedInvoker;
+-(void) configInvoker:(FKApiInvokerConfig*)config;
+
++(void) fire:(NSString*) method path:(NSString*) path param:(NSDictionary*)param headers:(NSDictionary*)headValue body:(id<NSObject>) bodyModel responseModelClass:(Class)modelClass success:(void(^)(id model)) successBlk failure:(void(^)(NSError * error)) failueBlk;
+
++(void) fireWithMockData:(NSData*)mockData method:(NSString*) method path:(NSString*) path param:(NSDictionary*)param headers:(NSDictionary*)headValue body:(id<NSObject>) bodyModel responseModelClass:(Class)modelClass success:(void(^)(id model)) successBlk failure:(void(^)(NSError * error)) failueBlk;
+@end

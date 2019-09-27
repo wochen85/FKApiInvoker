@@ -14,6 +14,12 @@
 		6B418301233CA95200A7ACCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B418300233CA95200A7ACCD /* Assets.xcassets */; };
 		6B418304233CA95200A7ACCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B418302233CA95200A7ACCD /* LaunchScreen.storyboard */; };
 		6B418307233CA95200A7ACCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B418306233CA95200A7ACCD /* main.m */; };
+		6B41831C233DE68D00A7ACCD /* successData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B41831B233DE68D00A7ACCD /* successData.json */; };
+		6B418320233DEAFF00A7ACCD /* RespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41831F233DEAFF00A7ACCD /* RespModel.m */; };
+		6B418323233DF8B500A7ACCD /* failureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B418321233DF8B500A7ACCD /* failureData.json */; };
+		6B418324233DF8B500A7ACCD /* tokenExpiredData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B418322233DF8B500A7ACCD /* tokenExpiredData.json */; };
+		6B41832A233DFA7C00A7ACCD /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B418329233DFA7C00A7ACCD /* LoginVC.m */; };
+		6B41832C233DFEE100A7ACCD /* successArrData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B41832B233DFEE100A7ACCD /* successArrData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +34,15 @@
 		6B418303233CA95200A7ACCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B418305233CA95200A7ACCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B418306233CA95200A7ACCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6B41830D233CAB9100A7ACCD /* FKApiInvoker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = FKApiInvoker.podspec; path = ../FKApiInvoker.podspec; sourceTree = "<group>"; };
+		6B41830D233CAB9100A7ACCD /* FKApiInvoker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = FKApiInvoker.podspec; path = ../FKApiInvoker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B41831B233DE68D00A7ACCD /* successData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successData.json; sourceTree = "<group>"; };
+		6B41831E233DEAFF00A7ACCD /* RespModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RespModel.h; sourceTree = "<group>"; };
+		6B41831F233DEAFF00A7ACCD /* RespModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RespModel.m; sourceTree = "<group>"; };
+		6B418321233DF8B500A7ACCD /* failureData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failureData.json; sourceTree = "<group>"; };
+		6B418322233DF8B500A7ACCD /* tokenExpiredData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tokenExpiredData.json; sourceTree = "<group>"; };
+		6B418328233DFA7C00A7ACCD /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		6B418329233DFA7C00A7ACCD /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		6B41832B233DFEE100A7ACCD /* successArrData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successArrData.json; sourceTree = "<group>"; };
 		869F0C54B539FC2B0B63D887 /* Pods-FKApiInvoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKApiInvoker.debug.xcconfig"; path = "Target Support Files/Pods-FKApiInvoker/Pods-FKApiInvoker.debug.xcconfig"; sourceTree = "<group>"; };
 		A0402EB630EDDF4FD91B29D9 /* Pods_FKApiInvoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKApiInvoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +89,8 @@
 		6B4182F6233CA95000A7ACCD /* FKApiInvoker */ = {
 			isa = PBXGroup;
 			children = (
+				6B41831D233DEAE900A7ACCD /* respModel */,
+				6B41831A233DE68D00A7ACCD /* mockData */,
 				6B4182F7233CA95000A7ACCD /* AppDelegate.h */,
 				6B4182F8233CA95000A7ACCD /* AppDelegate.m */,
 				6B4182FA233CA95000A7ACCD /* ViewController.h */,
@@ -84,8 +100,30 @@
 				6B418302233CA95200A7ACCD /* LaunchScreen.storyboard */,
 				6B418305233CA95200A7ACCD /* Info.plist */,
 				6B418306233CA95200A7ACCD /* main.m */,
+				6B418328233DFA7C00A7ACCD /* LoginVC.h */,
+				6B418329233DFA7C00A7ACCD /* LoginVC.m */,
 			);
 			path = FKApiInvoker;
+			sourceTree = "<group>";
+		};
+		6B41831A233DE68D00A7ACCD /* mockData */ = {
+			isa = PBXGroup;
+			children = (
+				6B41831B233DE68D00A7ACCD /* successData.json */,
+				6B41832B233DFEE100A7ACCD /* successArrData.json */,
+				6B418321233DF8B500A7ACCD /* failureData.json */,
+				6B418322233DF8B500A7ACCD /* tokenExpiredData.json */,
+			);
+			path = mockData;
+			sourceTree = "<group>";
+		};
+		6B41831D233DEAE900A7ACCD /* respModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B41831E233DEAFF00A7ACCD /* RespModel.h */,
+				6B41831F233DEAFF00A7ACCD /* RespModel.m */,
+			);
+			path = respModel;
 			sourceTree = "<group>";
 		};
 		C57554D16820FB9AD25DF09A /* Pods */ = {
@@ -156,9 +194,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B418323233DF8B500A7ACCD /* failureData.json in Resources */,
 				6B418304233CA95200A7ACCD /* LaunchScreen.storyboard in Resources */,
 				6B418301233CA95200A7ACCD /* Assets.xcassets in Resources */,
+				6B418324233DF8B500A7ACCD /* tokenExpiredData.json in Resources */,
 				6B4182FF233CA95000A7ACCD /* Main.storyboard in Resources */,
+				6B41832C233DFEE100A7ACCD /* successArrData.json in Resources */,
+				6B41831C233DE68D00A7ACCD /* successData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4182FC233CA95000A7ACCD /* ViewController.m in Sources */,
+				6B418320233DEAFF00A7ACCD /* RespModel.m in Sources */,
+				6B41832A233DFA7C00A7ACCD /* LoginVC.m in Sources */,
 				6B418307233CA95200A7ACCD /* main.m in Sources */,
 				6B4182F9233CA95000A7ACCD /* AppDelegate.m in Sources */,
 			);
