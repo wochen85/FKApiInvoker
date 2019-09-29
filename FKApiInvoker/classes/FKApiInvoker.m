@@ -91,7 +91,7 @@ NSString* const FKApiLevelErrDomain = @"com.fkapi.error";
         }
         
         //成功
-        id dataModel = respDic[self.config.respDataKey];
+        id dataModel = self.config.respDataKey?respDic[self.config.respDataKey]:respDic;
         if (modelClass)
         {
             //对象

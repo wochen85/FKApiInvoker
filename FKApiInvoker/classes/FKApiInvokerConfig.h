@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface FKApiInvokerConfig : NSObject
 - (instancetype)initWithBaseUrls:(NSArray<NSString*>*)baseUrls
                          commonHeaders:(NSDictionary*)commonHeaders
@@ -33,5 +31,3 @@ NS_ASSUME_NONNULL_BEGIN
 //token过期对应的错误码
 @property (nonatomic) NSInteger tokenExpiredCode;
 @end
-
-NS_ASSUME_NONNULL_END

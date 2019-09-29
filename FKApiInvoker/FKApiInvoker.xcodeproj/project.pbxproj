@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5664EC385F43F42E9FB8646E /* Pods_FKApiInvoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0402EB630EDDF4FD91B29D9 /* Pods_FKApiInvoker.framework */; };
+		6B1AE88623403E5800380639 /* mixinData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1AE88523403E5800380639 /* mixinData.json */; };
 		6B4182F9233CA95000A7ACCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4182F8233CA95000A7ACCD /* AppDelegate.m */; };
 		6B4182FC233CA95000A7ACCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4182FB233CA95000A7ACCD /* ViewController.m */; };
 		6B4182FF233CA95000A7ACCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4182FD233CA95000A7ACCD /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		44F051A8DC51C0AB378FD766 /* Pods-FKApiInvoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKApiInvoker.release.xcconfig"; path = "Target Support Files/Pods-FKApiInvoker/Pods-FKApiInvoker.release.xcconfig"; sourceTree = "<group>"; };
+		6B1AE88523403E5800380639 /* mixinData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mixinData.json; sourceTree = "<group>"; };
 		6B4182F4233CA95000A7ACCD /* FKApiInvoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKApiInvoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4182F7233CA95000A7ACCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B4182F8233CA95000A7ACCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				6B41832B233DFEE100A7ACCD /* successArrData.json */,
 				6B418321233DF8B500A7ACCD /* failureData.json */,
 				6B418322233DF8B500A7ACCD /* tokenExpiredData.json */,
+				6B1AE88523403E5800380639 /* mixinData.json */,
 			);
 			path = mockData;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				6B418301233CA95200A7ACCD /* Assets.xcassets in Resources */,
 				6B418324233DF8B500A7ACCD /* tokenExpiredData.json in Resources */,
 				6B4182FF233CA95000A7ACCD /* Main.storyboard in Resources */,
+				6B1AE88623403E5800380639 /* mixinData.json in Resources */,
 				6B41832C233DFEE100A7ACCD /* successArrData.json in Resources */,
 				6B41831C233DE68D00A7ACCD /* successData.json in Resources */,
 			);
