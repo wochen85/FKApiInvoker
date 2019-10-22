@@ -121,7 +121,7 @@ NSString* const FKApiLevelErrDomain = @"com.fkapi.error";
 {
     NSMutableDictionary* realHeaders = (self.config.commonHeaders?:@{}).mutableCopy;
     for (NSString* key in headers.allKeys) {
-        realHeaders[key] = realHeaders[key];
+        realHeaders[key] = headers[key];
     }
     return realHeaders;
 }
