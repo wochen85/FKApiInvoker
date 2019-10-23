@@ -38,6 +38,15 @@ FKApiInvokerConfig* config = [[FKApiInvokerConfig alloc] initWithBaseUrls:@[@"ht
     }];
 ```
 
+### 3. 使用mock数据
+```
+[FKApiInvoker fireWithMockData:mockData method:@"post" path:@"/personinfo/login" param:nil headers:headers body:body responseModelClass:[LoginResp class] success:^(LoginResp* model) {
+        //成功处理
+    } failure:^(NSError *error) {
+        //失败处理
+    }];
+```
+
 # 其他情况
 
 ### 1. 后台返回的业务数据和错误码、错误消息平级：
