@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FKApiInvoker'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '整合接口API调用'
   s.homepage         = 'https://github.com/wochen85/FKApiInvoker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

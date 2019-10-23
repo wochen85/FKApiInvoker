@@ -154,6 +154,12 @@ static FKApiInvoker* __fkApiInvoker = nil;
     _config = config;
 }
 
+-(void) configCommonHeaders:(NSDictionary*)commonHeaders
+{
+    NSAssert(nil != self.config, @"缺少总体配置，请先调用configInvoker进行总体配置");
+    _config.commonHeaders = commonHeaders;
+}
+
 - (void)setApiLevel:(FKApiLevel)apiLevel{
     NSAssert(apiLevel<=FKApiLevel_prd && apiLevel>=FKApiLevel_dev, @"apiLevel错误");
     _apiLevel = apiLevel;

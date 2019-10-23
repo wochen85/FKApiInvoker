@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, FKApiLevel) {
 
 +(instancetype) sharedInvoker;
 -(void) configInvoker:(FKApiInvokerConfig*)config;
+-(void) configCommonHeaders:(NSDictionary*)commonHeaders;
 
 +(void) fire:(NSString*) method path:(NSString*) path param:(NSDictionary*)param headers:(NSDictionary*)headValue body:(id<NSObject>) bodyModel responseModelClass:(Class)modelClass success:(void(^)(id model)) successBlk failure:(void(^)(NSError * error)) failueBlk;
 
