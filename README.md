@@ -68,3 +68,5 @@ FKApiInvokerConfig* config = [[FKApiInvokerConfig alloc] initWithBaseUrls:@[@"ht
 ### 3. 需要做其他更加灵活的json格式的http请求？
 可以直接使用我写的另一个库：
 [JsonModelHttp](https://github.com/wochen85/JsonModelHttp)
+
+事实上FKApiInvoker底层也是依赖的JsonModelHttp.
