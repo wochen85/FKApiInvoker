@@ -79,3 +79,4 @@ FKApiInvokerConfig* config = [[FKApiInvokerConfig alloc] initWithBaseUrls:@[@"ht
 [JsonModelHttp](https://github.com/wochen85/JsonModelHttp)
 
 事实上FKApiInvoker底层也是依赖的JsonModelHttp.
+JsonModelHttp是对网络请求的通用封装和对json格式数据的统一model化；FKApiInvoker是对业务层json格式的统一抽象。
