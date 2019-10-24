@@ -83,3 +83,7 @@ FKApiInvokerConfig* config = [[FKApiInvokerConfig alloc] initWithBaseUrls:@[@"ht
 JsonModelHttp是对网络请求的通用封装和对json格式数据的统一model化，
 
 FKApiInvoker是对业务层json格式的统一抽象。
+
+### 4. FKApiInvoker也对常用API环境（开发、测试、预生产、生产）的配置提供了支持
+
+具体请参见demo工程
